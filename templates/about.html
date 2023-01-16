@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-About</title>
+    <link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png')}}">
+</head>
+<body> 
+
+    <!-- Navigation Bar-->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="templates/index.html">home</a></li>
+            <li class="link"><a href="{{url_for('projects')}}">projects</a></li>
+            <li class="link"><a href="{{url_for('about')}}">about</a></li>
+            <li class="link"><a href="{{url_for('contact')}}">contact</a></li>            
+        </ul>
+    </nav>
+
+    <!-- About Me -->
+    <section class="about_section">
+        <h1 class="heading">About Me</h1>
+        <div class="about">
+            <div class="about_image_container">
+                <img src="{{url_for('static',filename='home.png')}}" alt="my image" class="about_image">
+                
+            </div>
+            <p class="about_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis aperiam vel! Ut doloribus excepturi nemo praesentium ex alias earum soluta autem quae, minima asperiores, illum aperiam eligendi cumque rem magni omnis magnam facilis non vitae sed deserunt in neque molestias? Quae totam nulla quia necessitatibus quas recusandae aliquam aut odit praesentium reiciendis eveniet id, in fugit labore quam libero aspernatur ipsum exercitationem tempore atque eius facere facilis velit! Provident quos nulla voluptates magnam temporibus, minus maiores, facere deserunt aliquid, molestiae ea consequatur assumenda ut aut repellendus voluptatum placeat sint! Vero distinctio earum commodi maxime fugiat aut aperiam, dignissimos laborum!  
+            <button class="download_cv_button">download cv</button>
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skill_section">
+            <h1 class="heading">Skills</h1>
+            <div class="skills_container">
+                <div class="skill_card">
+                    <img src="{{url_for('static',filename='html5.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='css3.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='js.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='python.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='flask.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='bootstrap.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='react.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='nodejs.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='git.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='github.png')}}" alt="html logo"  class="skill_image" >
+                    <img src="{{url_for('static',filename='webpack.png')}}" alt="html logo"  class="skill_image" width="200px" >
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

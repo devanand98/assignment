@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Projects</title>
+    <link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png')}}">
+</head>
+<body> 
+
+    <!-- Navigation Bar-->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="templates/index.html">home</a></li>
+            <li class="link"><a href="{{url_for('projects')}}">projects</a></li>
+            <li class="link"><a href="{{url_for('about')}}">about</a></li>
+            <li class="link"><a href="{{url_for('contact')}}">contact</a></li>            
+        </ul>
+    </nav>
+
+   <!-- Projects -->
+   <section class="project_section">
+       <h1 class="project_heading">Some of my projects</h1>
+        <div class="project_container">
+            <div class="project_card">
+                <img src="{{url_for('static',filename='project-1.png')}}" alt="project-1" class="project_image">
+                <div class="project_content">
+                    <h1 class="project_title">Micro Blogging WebApp </h1>
+                    <p class="project_info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in quos, id quidem molestiae excepturi necessitatibus ipsum quod dolore doloremque.
+                    </p>
+                    <div class="project_buttons">
+                        <button class="project_button_github">github repo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <img src="{{url_for('static',filename='project-2.png')}}" alt="project-2" class="project_image">
+                <div class="project_content">
+                    <h1 class="project_title">Tic-Tac-Toe </h1>
+                    <p class="project_info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in quos, id quidem molestiae excepturi necessitatibus ipsum quod dolore doloremque.
+                    </p>
+                    <div class="project_buttons">
+                        <button class="project_button_github">github repo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <img src="{{url_for('static',filename='project-3.png')}}" alt="project-3" class="project_image">
+                <div class="project_content">
+                    <h1 class="project_title">Library Database </h1>
+                    <p class="project_info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in quos, id quidem molestiae excepturi necessitatibus ipsum quod dolore doloremque.
+                    </p>
+                    <div class="project_buttons">
+                        <button class="project_button_github">github repo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <img src="{{url_for('static',filename='project-4.png')}}" alt="project-4" class="project_image">
+                <div class="project_content">
+                    <h1 class="project_title">Etch A Sketch </h1>
+                    <p class="project_info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in quos, id quidem molestiae excepturi necessitatibus ipsum quod dolore doloremque.
+                    </p>
+                    <div class="project_buttons">
+                        <button class="project_button_github">github repo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src={{url_for('static', filename='script.js')}}></script>
+</body>
+</html>
