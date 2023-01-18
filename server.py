@@ -1,8 +1,14 @@
-from flask import Flask , render_template
+from flask import Flask , render_template, flash, redirect
+from config import Config
+from forms import LoginForm
+
 app =Flask(__name__)
+app.config.from_object(Config)
+app.config['SECRET_KEY'] = 'thepassword'
 
 @app.route('/')
-def hello_world():
+@app.route('/index')
+def index():
     return render_template('index.html ')
 
 @app.route('/about')
@@ -16,3 +22,8 @@ def projects():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/login')
+def login():
+    form= LoginForm()
+    return render_template('login.html', form = form)
